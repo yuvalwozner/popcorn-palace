@@ -13,6 +13,6 @@ import java.util.List;
 public interface ShowtimeRepository extends JpaRepository<Showtime, Long> {
     // Function used to validate that there are no overlapping showtimes for the
     // same theater.
-    List<Showtime> noOverlappingShowtimes(String theater, Instant endTime,
+    List<Showtime> findByTheaterAndStartTimeLessThanAndEndTimeGreaterThan(String theater, Instant endTime,
         Instant startTime);
 }

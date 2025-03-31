@@ -11,5 +11,5 @@ import java.util.UUID;
 @Repository
 public interface TicketRepository extends JpaRepository<Ticket, UUID> {
     // For seat duplication check:
-    boolean noDuplicationSeat(Showtime show, Integer seatnumber);
+    boolean existsByShowtimeAndSeatNumber(Showtime show, Integer seatnumber);
 }
