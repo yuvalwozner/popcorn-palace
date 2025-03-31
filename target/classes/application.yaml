@@ -1,6 +1,3 @@
-server:
-  port: 8080
-
 spring:
   application:
     name: popcorn-palace
@@ -9,7 +6,6 @@ spring:
     username: popcorn-palace
     password: popcorn-palace
     driverClassName: org.postgresql.Driver
-    platform: postgres
   jpa:
     database: POSTGRESQL
     show-sql: true
@@ -17,4 +13,5 @@ spring:
       ddl-auto: update
   sql:
     init:
+      platform: postgres
       mode: always
