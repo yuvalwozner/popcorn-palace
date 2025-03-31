@@ -1,4 +1,4 @@
-package com.att.tdp.popcorn_palace.Repositories;
+package com.att.tdp.popcorn_palace.repositories;
 
 import com.att.tdp.popcorn_palace.model.Ticket;
 import com.att.tdp.popcorn_palace.model.Showtime;
