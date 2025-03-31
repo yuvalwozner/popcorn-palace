@@ -15,11 +15,11 @@ public class Movie {
 
     private String genre;
 
-    private int duration;         // in minutes
+    private Integer duration;         // in minutes
 
-    private double rating;        // out of 10, for example
+    private Double rating;        // out of 10, for example
 
-    private int releaseYear;
+    private Integer releaseYear;
 
     // === Constructors ===
     public Movie() {
@@ -59,7 +59,7 @@ public class Movie {
         this.genre = genre;
     }
 
-    public int getDuration() {
+    public Integer getDuration() {
         return duration;
     }
 
@@ -67,7 +67,7 @@ public class Movie {
         this.duration = duration;
     }
 
-    public double getRating() {
+    public Double getRating() {
         return rating;
     }
 
@@ -75,7 +75,7 @@ public class Movie {
         this.rating = rating;
     }
 
-    public int getReleaseYear() {
+    public Integer getReleaseYear() {
         return releaseYear;
     }
 
