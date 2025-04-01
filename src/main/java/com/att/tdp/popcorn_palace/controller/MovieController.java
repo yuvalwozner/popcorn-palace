@@ -44,7 +44,6 @@ public class MovieController {
         if (movie.getReleaseYear() == null) {
             return ResponseEntity.badRequest().body("Release year is required");
         }
-
         // Delegate to service
         Movie saved = movieService.addMovie(movie);
         return ResponseEntity.ok(saved);

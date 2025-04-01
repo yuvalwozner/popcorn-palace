@@ -23,7 +23,6 @@ public class Movie {
 
     // === Constructors ===
     public Movie() {
-        // Default constructor (required by JPA)
     }
 
     public Movie(String title, String genre, int duration, double rating, int releaseYear) {
@@ -79,7 +78,7 @@ public class Movie {
         return releaseYear;
     }
 
-    public void setReleaseYear(int releaseYear) {
+    public void setReleaseYear(Integer releaseYear) {
         this.releaseYear = releaseYear;
     }
 }
